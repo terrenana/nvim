@@ -5,14 +5,17 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'arcticicestudio/nord-vim'
+Plug 'ap/vim-css-color'
+Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
 " Airline config
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='deus'
 let g:airline_powerline_fonts = 1
+let g:airline_theme='nord'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -39,8 +42,8 @@ command! W execute 'w !doas tee % > /dev/null' <bar> edit!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+" Set 7 lines to the cursor - when moving vertically
+set scrolloff=8
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
@@ -130,7 +133,7 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
-
+set termguicolors
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
