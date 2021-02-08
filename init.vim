@@ -16,7 +16,6 @@ call plug#end()
 let g:airline_powerline_fonts = 1
 let g:airline_theme='nord'
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -345,7 +344,6 @@ endfunction
 "" Abbreviations
 "*****************************************************************************
 "" no one is really happy until you have this shortcuts
-cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!
 cnoreabbrev Wq wq
